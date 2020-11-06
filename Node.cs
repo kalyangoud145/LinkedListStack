@@ -4,6 +4,7 @@ using System.Text;
 
 namespace LinkedListStackDemo
 {
+    //Node for the stack
     class Node
     {
         public int data;

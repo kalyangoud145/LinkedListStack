@@ -2,6 +2,9 @@
 
 namespace LinkedListStackDemo
 {
+    /// <summary>
+    /// Main class
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -10,7 +13,7 @@ namespace LinkedListStackDemo
             linkedListStack.Push(56);
             linkedListStack.Push(30);
             linkedListStack.Push(70);
-            Console.WriteLine("*************");
+            linkedListStack.IsEmpty();
             linkedListStack.Display();
         }
     }
