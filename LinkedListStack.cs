@@ -34,6 +34,42 @@ namespace LinkedListStackDemo
             Console.WriteLine("{0} pushed to stack ", data);
         }
         /// <summary>
+        /// Method for getting the top element 
+        /// </summary>
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty");
+            }
+            Console.WriteLine("\n{0} is in the top of the stack", this.top.data);
+        }
+        /// <summary>
+        /// Method gets top most element and removes that.
+        /// </summary>
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("\nValue popped is {0} ", this.top.data);
+            this.top = this.top.next;
+        }
+        /// <summary>
+        /// Method Performs peek and pop operation till the stack is empty
+        /// </summary>
+        public  void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+            Console.WriteLine("Stack is empty now.");
+        }
+        /// <summary>
         /// Displays the elements in the stack
         /// </summary>
         public void Display()
