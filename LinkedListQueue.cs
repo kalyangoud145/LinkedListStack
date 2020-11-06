@@ -31,6 +31,21 @@ namespace LinkedListStackDemo
             Console.WriteLine("{0} inserted into queue ", node.data);
         }
         /// <summary>
+        /// Method for removing elements from beginning
+        /// </summary>
+        public void DeQueue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                Console.WriteLine(head.data + " removed from Queue");
+                head = head.next;
+            }
+        }
+        /// <summary>
         /// Displays the elements of the queue
         /// </summary>
         public void Display()
