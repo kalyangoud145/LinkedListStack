@@ -6,7 +6,12 @@ namespace LinkedListStackDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Stack");
+            LinkedListStack linkedListStack = new LinkedListStack();
+            linkedListStack.Push(56);
+            linkedListStack.Push(30);
+            linkedListStack.Push(70);
+            Console.WriteLine("*************");
+            linkedListStack.Display();
         }
     }
 }
