@@ -7,9 +7,9 @@ namespace LinkedListStackDemo
     /// <summary>
     /// Queue implementation methods
     /// </summary>
-    class LinkedListQueue
+    public class LinkedListQueue
     {
-        Node head = null;
+        public Node head = null;
         /// <summary>
         /// Enqueues the specified data.
         /// </summary>

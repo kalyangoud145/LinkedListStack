@@ -7,9 +7,9 @@ namespace LinkedListStackDemo
     /// <summary>
     /// Stack implementation class
     /// </summary>
-    class LinkedListStack
+    public class LinkedListStack
     {
-        private Node top;
+        public Node top;
         public LinkedListStack()
         {
             this.top = null;
@@ -36,13 +36,14 @@ namespace LinkedListStackDemo
         /// <summary>
         /// Method for getting the top element 
         /// </summary>
-        public void Peek()
+        public int Peek()
         {
             if (this.top == null)
             {
                 Console.WriteLine("stack is empty");
             }
             Console.WriteLine("\n{0} is in the top of the stack", this.top.data);
+            return this.top.data;
         }
         /// <summary>
         /// Method gets top most element and removes that.
@@ -60,7 +61,7 @@ namespace LinkedListStackDemo
         /// <summary>
         /// Method Performs peek and pop operation till the stack is empty
         /// </summary>
-        public  void IsEmpty()
+        public void IsEmpty()
         {
             while (this.top != null)
             {
@@ -68,6 +69,7 @@ namespace LinkedListStackDemo
                 Pop();
             }
             Console.WriteLine("Stack is empty now.");
+            throw new Exception("Stack is empty now.");
         }
         /// <summary>
         /// Displays the elements in the stack
